@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--para qu el navegador sepa que el sitio esta obtimizado para mobile-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Viajero</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" >
+    <!--<link rel="stylesheet" href="css/fontawesome.min.css">-->
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto" rel="stylesheet">
+
+    <!--JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,500i,700,700i" rel="stylesheet">
+  
+   <!--Mis Scripts-->
+    
+
+
+    
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+
+
+<body>
+
+<div id= "top" class="afuera">
+
+<div class="contenedor-nav1">
+
+        <div class="contenedor adentro-m1">
+                <nav class="simple">
+                       
+                        <ul>
+                            <li><a href="#"  id="vuelos">Vuelos</a></li>
+                            <li><a href="#" id="hoteles-btn">Hoteles</a></li>
+                            <li><a href="#" id="actividades">Actividades</a></li>
+                         
+                        </ul>
+                      </nav>
+                
+                      <nav>
+
+                        <ul>
+
+                            <li  id="login-aviso" style="color:aliceblue; float:right" ></li>;
+                        </ul>
+                      </nav>
+                      <nav class="simple">
+                            <ul>
+                               
+                                <li><a href="#" id="entrar" class="login" style="min-width:10rem" >Iniciar Sesion</a></li>
+                              
+                                 
+                             
+                            </ul>
+                            
+                          </nav>
+                         
+                         
+                        
+                    </div>
+                          </div>
+        
+
+
+
+
+
+  <div  class=" contenedor-nav2">
+
+
+
+
+
+
+    <div class="contenedor adentro-m2">
+  
+
+        <div  class="logo">
+            
+             <a href="#top"  class="slide"> <img src="img/logo.png"  class="logo"> </a>
+          
+            
+              <span id="menu-ham">
+             
+                <a href="#"></a>
+                <svg width="30" height="30">
+                    <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+                    <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+                    <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+
+
+
+
+
+                </svg>
+
+            </a>
+              </span>
+
+         
+
+        </div>
+        
+        <nav id="menu-principal" class="simple">
+        <ul>
+            <li><a href="#lugares" class="slide">Lugares</a></li>
+            <li><a href="#hoteles" class="slide">Hoteles</a></li>
+            <li><a href="#promos" class="slide">Promos</a></li>
+            <li><a href="#testimoniales" class="slide">Testimoniales</a></li>
+            <li><a href="#contacto" class="slide">Contacto</a></li>
+           
+        </ul>
+      </nav>
+    
+</div>
+</div>
+
+
+
+</div> <!--afuera-->
+   
+
+<div  id= "contenedor-formulario" class="contenedor-formulario">
+       
+</div>
+
+<div class="cont-form-adentro">
+        <form id= "formulario" action="#" class=" contenedor formulario-busqueda">
+                     
+                 
+                <div class="campo1">
+                <label>Palabras Clave</label>   
+                <input type="text"  class="input-busqueda" placeholder="¿Que buscas?">
+                
+            </div>
+        
+            <div class="campo2">
+                <label>Actividades</label>
+                <select class="input-select">
+                        <option  value="actividad" selected>Todas</option>
+                        <option  value="actividad2" selected>Caminatas</option>
+        
+                </select>
+            </div>
+        
+                 <div class="campo3">
+                <label>Lugares</label>
+                <select class="input-select">
+                    <option  value="Destino" selected>Todos</option>
+                    <option  value="destino1" selected>Aruba</option>
+        
+               </select>
+                
+            </div> 
+            <div class="campo4">
+                <div class="label-fecha">
+                <label >Fecha de llegada</label>
+                </div>
+                <input type="date"  class="input-date">
+                
+            </div> 
+                
+            <div class="campo5" >
+                 <div class="label-fecha">
+                <label class="label-fecha">Fecha de partida</label>
+               </div>
+                <input type="date" class="input-date">
+            
+            </div> 
+        
+            <div class="btn-buscar">
+               
+                <input type="button" class="buscarBtn" value="Buscar">
+            
+            </div> 
+        </form>
+        <form id= "formulario2" action="#" class=" contenedor formulario-busqueda">
+                     
+                 
+                <div class="campo1">
+                <label>Destino</label>   
+                <input type="text"  class="input-busqueda" placeholder="Lugar destino">
+                
+            </div>
+        
+            <div class="campo2">
+                    <div class="label-fecha">
+                            <label >Fecha de llegada</label>
+                            </div>
+                            <input type="date"  class="input-date">
+              
+            </div>
+        
+                 <div class="campo3">
+                        <div class="label-fecha">
+                                <label class="label-fecha">Fecha de regreso</label>
+                               </div>
+                                <input type="date" class="input-date">
+                            
+                
+            </div> 
+            <div class="campo4">
+                    <label>Tipo de viaje</label>
+                    <select class="input-select">
+                        <option  value="Destino" selected>Ida</option>
+                        <option  value="destino1" selected>Ida y vuelta</option>
+                        <option  value="destino1" selected>Multidestino</option>
+            
+                   </select>
+                
+            </div> 
+                
+            <div class="campo5" >
+                    <label>Cantidad de pasajeros</label>
+                    <select class="input-select">
+                        <option  value="Destino" selected>1</option>
+                        <option  value="destino1">2</option>
+                        <option  value="destino1" >3</option>
+                        <option  value="destino1" >4</option>
+                        <option  value="destino1" >5</option>
+
+            
+                   </select>
+            </div> 
+        
+            <div class="btn-buscar">
+               
+                <input type="button" class="buscarBtn" value="Buscar">
+            
+            </div> 
+        </form>
+
+        <form id= "formulario3" action="#" class=" contenedor formulario-busqueda">
+                     
+                 
+                <div class="campo1">
+                <label>Dónde</label>   
+                <input type="text"  class="input-busqueda" placeholder="Lugar destino">
+                
+            </div>
+        
+            <div class="campo2">
+                    <div class="label-fecha">
+                            <label >Fecha de llegada</label>
+                            </div>
+                            <input type="date"  class="input-date">
+              
+            </div>
+        
+                 <div class="campo3">
+                        <div class="label-fecha">
+                                <label class="label-fecha">Fecha de regreso</label>
+                               </div>
+                                <input type="date" class="input-date">
+                            
+                
+            </div> 
+            <div class="campo4">
+                    <label>Habitaciones</label>
+                    <select class="input-select">
+                        <option  value="Destino" selected>1</option>
+                        <option  value="destino1" selected>2</option>
+                        <option  value="destino1" selected>3</option>
+            
+                   </select>
+                
+            </div> 
+                
+            <div class="campo5" >
+                    <label>Huéspedes</label>
+                    <select class="input-select">
+                        <option  value="Destino" selected>1</option>
+                        <option  value="destino1" >2</option>
+                        <option  value="destino1" >3</option>
+                        <option  value="destino1" >5</option>
+                        <option  value="destino1" >5</option>
+
+            
+                   </select>
+            </div> 
+        
+            <div class="btn-buscar">
+               
+                <input type="submit" class="buscarBtn" value="Buscar">
+            
+            </div> 
+        </form>
+
+
+</div>
+
+    <main  id="para-sticky" class="contenedor ">
+        
+     
+
+        <section id="lugares" class="lugares">
+        <h2>Lugares recomendados</h2>
+        <div class="contenedor-elementos">
+               <div class="elemento">
+                    <img src="img/foto6.jpg" alt="">
+                    <div class="info">
+                        <p class="titulo">Miami</p>
+                        <p class="precio">$3200 por noche</p>
+
+
+
+
+                    </div>
+                </div> <!--fin de elemento --> 
+
+             
+            <div class="elemento">
+                    <img src="img/foto2.jpg" alt="">
+                    <div class="info">
+                        <p class="titulo">Paris</p>
+                        <p class="precio">$3300 por noche</p>
+
+
+
+
+                    </div>
+
+
+                </div> <!--fin de elemento -->  
+
+                <div class="elemento">
+                        <img src="img/foto3.jpg" alt="">
+                        <div class="info">
+                            <p class="titulo">Londres</p>
+                            <p class="precio">$3800 por noche</p>
+    
+    
+    
+    
+                        </div>
+    
+    
+                    </div> <!--fin de elemento -->  
+
+
+                    <div class="elemento">
+                            <img src="img/foto10.jpg" alt="">
+                            <div class="info">
+                                <p class="titulo">Venecia</p>
+                                <p class="precio">$3200 por noche</p>
+        
+        
+        
+        
+                            </div>
+        
+        
+                        </div> <!--fin de elemento -->  
+
+
+                        <div class="elemento">
+                                <img src="img/foto8.jpg" alt="">
+                                <div class="info">
+                                    <p class="titulo">Playa del Carmen</p>
+                                    <p class="precio">$2600 por noche</p>
+            
+            
+            
+            
+                                </div>
+            
+            
+                            </div> <!--fin de elemento -->  
+
+                            <div class="elemento">
+                                    <img src="img/foto7.jpg" alt="">
+                                    <div class="info">
+                                        <p class="titulo">Punta Cana</p>
+                                        <p class="precio">$2450 por noche</p>
+                
+                
+                
+                
+                                    </div>
+                
+                
+                                </div> <!--fin de elemento -->  
+        
+        
+                                <div class="elemento">
+                                        <img src="img/foto9.jpg" alt="">
+                                        <div class="info">
+                                            <p class="titulo">Roma</p>
+                                            <p class="precio">$2700 por noche</p>
+                    
+                    
+                    
+                    
+                                        </div>
+
+
+                                 
+                                
+                    
+                    
+                                    </div> <!--fin de elemento -->
+
+
+                                    <div class="elemento">
+                                            <img src="img/foto11.jpg" alt="">
+                                            <div class="info">
+                                                <p class="titulo">New York</p>
+                                                <p class="precio">$2200 por noche</p>
+                        
+                        
+                        
+                        
+                                            </div>
+                        
+                        
+                                        </div> <!--fin de elemento -->  
+                   
+                </div><!--fin contendor d elmentos-->
+    
+
+            </section>
+
+            <section id="promos" class="actividades">
+
+
+                    <h2>Paquetes y promociones</h2>
+                    <div class="contenedor-elementos">
+                       <div class="elemento">
+                           <img src="img/promo1.jpg" alt="">
+                           <div class="info">
+   
+   
+                               <p class="categoria otros">Promos</p>
+                               <p class="titulo"> Tailandia</p>
+                               <p class="precio">1.200 por persona </p>
+                               <p class="precio">8 días y 7 noches </p>
+                               <p class="precio">Hotel Hilton </p>
+   
+   
+   
+   
+                           </div>
+   
+   
+   
+   
+   
+                       </div>
+                       <div class="elemento">
+                               <img src="img/promo3.jpg" alt="">
+                               <div class="info">
+       
+       
+                                   <p class="categoria otros">Promos</p>
+                                   
+                                   <p class="titulo">Machu Picchu</p>
+                                   <p class="precio">5 dias y 4 noches </p>
+                                   <p class="precio">1.000 por persona </p>
+
+       
+       
+       
+       
+                               </div>
+       
+       
+       
+       
+       
+                           </div>
+   
+                           <div class="elemento">
+                                   <img src="img/promo4.jpg" alt="">
+                                   <div class="info">
+           
+           
+                                       <p class="categoria otros">Promos</p>
+                                       <p class="titulo"> Tour a Egipto </p>
+                                       <p class="precio">1.200 por persona </p>
+                                       <p class="precio">4 dias y 3 noches </p>
+                                       <p class="precio">pensión completa en crucero </p>
+                                       <p class="precio">Visita pirámides </p>
+           
+           
+           
+           
+                                   </div>
+           
+           
+           
+           
+           
+                               </div>
+   
+   
+                              
+                         </div>
+                    
+   
+               </section>
+        </main>
+            <section id="testimoniales">
+                    <div class="capa-black"> </div>
+                    <h1>Testimoniales viajero</h1>
+                    <p class="parrafo1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+                         ipsam magni voluptate eligendi quod in fugiat culpa architecto 
+                         voluptatem, fugit quisquam tempore illo labore temporibus, laborum ex maxime atque veritatis.</p>
+            <div class="container-testimonials">
+            
+            <div class="testimonial">
+                    <div class="foto-perfil">   </div>
+                        <h2>Francisco Antonio R.</h2>
+                        <h4>Cliente Viajero</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat voluptas deserunt id earum voluptatibus quisquam porro
+                             repudiandae eligendi nobis? Suscipit ipsa quaerat aspernatur quia ipsam mollitia atque eaque illum illo.</p>
+                          
+                      <div class="contenedor-redes">
+                            <label class="icono-facebook"><i class="fab fa-facebook"></i></label>
+                            <label class="icono-google"><i class="fab fa-google-plus-square"></i></label>
+                            <label class="icono-twitter"><i class="fab fa-twitter-square"></i></label>
+            
+                        </div>
+            
+                    
+            </div>
+            
+            
+            <div class="testimonial">
+                    <div class="foto-perfil2">   </div>
+                        <h2>Sonia C.</h2>
+                        <h4>Clienta Viajero</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat voluptas deserunt id earum voluptatibus quisquam porro
+                             repudiandae eligendi nobis? Suscipit ipsa quaerat aspernatur quia ipsam mollitia atque eaque illum illo.</p>
+                          
+                      <div class="contenedor-redes">
+                            <label class="icono-facebook"><i class="fab fa-facebook"></i></label>
+                            <label class="icono-google"><i class="fab fa-google-plus-square"></i></label>
+                            <label class="icono-twitter"><i class="fab fa-twitter-square"></i></label>
+            
+                        </div>
+            
+                    </div>
+            
+            
+            <div class="testimonial">
+                    <div class="foto-perfil3">   </div>
+                        <h2>Liliana S</h2>
+                        <h4>Clienta Viajero</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat voluptas deserunt id earum voluptatibus quisquam porro
+                             repudiandae eligendi nobis? Suscipit ipsa quaerat aspernatur quia ipsam mollitia atque eaque illum illo.</p>
+                          
+                      <div class="contenedor-redes">
+                            <label class="icono-facebook"><i class="fab fa-facebook"></i></label>
+                            <label class="icono-google"><i class="fab fa-google-plus-square"></i></label>
+                            <label class="icono-twitter"><i class="fab fa-twitter-square"></i></label>
+            
+                        </div>
+            
+                    </div>
+            
+            
+            
+            </section>
+            <main   class="contenedor ">
+
+                    <section class="actividades">
+
+
+                            <h2>Actividades Recomendadas</h2>
+                            <divs class="contenedor-elementos">
+                               <div class="elemento">
+                                   <img src="img/actividades1.jpg" alt="">
+                                   <div class="info">
+           
+           
+                                       <p class="categoria musica">Concierto</p>
+                                       <p class="titulo"> Festival de musica electronica</p>
+                                       <p class="precio">1.200 por persona </p>
+           
+           
+           
+           
+                                   </div>
+           
+           
+           
+           
+           
+                               </div>
+                               <div class="elemento">
+                                       <img src="img/actividades2.jpg" alt="">
+                                       <div class="info">
+               
+               
+                                           <p class="categoria musica">Aventura</p>
+                                           <p class="titulo"> Trekking Adventure & Suspension Bridge</p>
+                                           <p class="precio">1.200 por persona </p>
+               
+               
+               
+               
+                                       </div>
+               
+               
+               
+               
+               
+                                   </div>
+           
+                                   <div class="elemento">
+                                           <img src="img/actividades3.jpg" alt="">
+                                           <div class="info">
+                   
+                   
+                                               <p class="categoria comida">Clase de cocina</p>
+                                               <p class="titulo"> Aprende a cocinar la auténtica paella</p>
+                                               <p class="precio">1.200 por persona </p>
+                   
+                   
+                   
+                   
+                                           </div>
+                   
+                   
+                   
+                   
+                   
+                                       </div>
+           
+           
+                                       <div class="elemento">
+                                               <img src="img/actividades4.jpg" alt="">
+                                               <div class="info">
+                       
+                       
+                                                   <p class="categoria aire-libre">Recorrido en bicileta</p>
+                                                   <p class="titulo"> Recorrido en bicicleta en la montaña</p>
+                                                   <p class="precio">1.200 por persona </p>
+                       
+                       
+                       
+                       
+                                               </div>
+                       
+                       
+                       
+                       
+                       
+                                           </div>
+           
+                            </div>
+           
+           
+                       </section>
+           
+           
+           
+                       <section id="hoteles" class="hoteles">
+                           <h2>Hoteles recomendados</h2>
+                               <div class="contenedor-elementos">
+                                   <div class="elemento">
+                                           <img src="img/hotel-1.jpg" alt="">
+                                           <div class="info">
+                                               <p class="categoria hoteles">Hotel en Miami</p>
+                                               <p class="titulo">Habitaciones y suites en un hotel elegante con bar en la azotea.</p>
+                                               <p class="precio">$3,200 por persona</p>
+                                           </div>
+                                        </div>
+           
+           
+           
+           
+                                        <div class="elemento">
+                                               <img src="img/hotel-2.jpg" alt="">
+                                               <div class="info">
+                                                   <p class="categoria hoteles">Hotel en Miami</p>
+                                                   <p class="titulo">Habitaciones y suites en un hotel 5 estrellas</p>
+                                                   <p class="precio">$3,200 por persona</p>
+                                               </div>
+                                            </div>
+           
+           
+                                            <div class="elemento">
+                                                   <img src="img/hotel-3.jpg" alt="">
+                                                   <div class="info">
+                                                       <p class="categoria hoteles">Hotel en Paris</p>
+                                                       <p class="titulo">Hotel La Nouvelle République .</p>
+                                                       <p class="precio">$3,200 por persona</p>
+                                                   </div>
+                                                </div>   
+           
+                                    </div>
+           
+                              
+           
+           
+           
+           
+           
+                       </section>
+           
+            
+            </main>
+
+
+          
+          
+           
+ <!--Footer-->
+
+
+<div   id="contacto" class="info-container">
+  <div class="info-main">
+            
+         <h3>Contacto</h3>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Magni a ut, consequuntur est ab ducimus voluptas officia 
+              commodi aperiam illo eum dolorum, ipsum quam optio, sint cum sunt totam odio.</p>
+            
+          <div class="wrap-collabsible">
+                <input id="collapsible" class="toggle" type="checkbox">
+                <label for="collapsible" class="lbl-toggle" tabindex="0">Mas informacion</label>
+                <div class="collapsible-content">
+                  <div class="content-inner">
+                  
+<div class="container">
+        <form id="form-contacto" action="">
+          <label for="fname">Nombre</label>
+          <input type="text" id="fname" name="firstname" placeholder="Tu nombre..">
+      
+          <label for="lname">Apellido</label>
+          <input type="text" id="lname" name="lastname" placeholder="Tu apellido..">
+        
+          <label for="lname">Asunto</label>
+          <input type="text" id="lasunto" name="lastname" placeholder="Asunto..">
+      
+         
+      
+          <label for="subject">Mensaje</label>
+          <textarea id="subject" name="subject" placeholder="Escribi algo.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Enviar">
+        </form>
+      </div>
+      
+                  </div>
+                </div>
+              </div>
+
+
+
+  </div>
+
+
+
+</div>
+<footer>
+
+<div class="footer-container">
+    <div class="footer-main">
+        <div class="footer-columna">
+            <h3>Suscribete</h3>
+            <input type="email" placeholder="Escriba su Correo">
+            <input type="submit" value="Suscribirse">
+        </div>
+        <div class="footer-columna">
+            <h3>Direccion</h3>
+            <span class="fa fa-map-marker"><p>232 Av dE mayo 232 -Argentina</p></span>
+            <span class="fa fa-phone"><p>(+54) 67 3723873</p></span>
+            <span class="fa fa-envelope"><p>info@viajero.com</p></span>
+
+        </div>
+        <div class="footer-columna">
+            <h3>Sobre Nosotros</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt at animi porro ducimus ab 
+                saepe quia! Ratione maiores error quam id nisi veritatis, perferendis,
+                 nobis animi dolorum quas nam voluptate.   </p>
+        </div>
+
+</div>
+
+</div>
+
+<div class="footer-copy-redes">
+
+<div class="main-copy-redes">
+<div class="footer-copy">
+
+&copy; 2019, Todos los derechos reservados - | Viajero |.
+
+
+</div>
+
+<div class="footer-redes">
+<a href="" class="fab fa-facebook"></a>
+<a href="" class="fab fa-twitter"></a>
+<a href="" i class="fab fa-youtube">  </a>
+<a href="" i class="fab fa-instagram"></a>
+<i class="fa fa-google-plus-circle"></i>
+</div>
+
+</div>
+
+
+
+</div>
+
+</footer>
+
+
+
+
+
+
+
+
+
+        <div id="my-modal" class="modal">
+       
+      
+                    <div class="login">
+                            <div class="login-triangle"></div>
+                            <div>
+                            <span class="close">&times;</span>
+
+                        </div>
+                            <h2 class="login-header">Iniciar Sesion </h2>
+                           
+                            <form class="login-container">
+                                    
+                             <p><input type="text" id="user" placeholder="Usuario"></p>
+                             
+                             <p> <input type="password" placeholder="Password"> </p>
+                              <p></p><input type="submit" id="modal-submit" value="Log in"></form><p>
+                            </form>
+                          
+                       
+         
+          </div>
+        </div>
+             
+    
+  
+       
+    
+
+
+
+</body>
+
+      
+
+      
+   
+
+
+
+        <!--Seccion modal-->
+   
+   
+
+    <!--
+        -->
+
+
+    
+
+</html>
+
